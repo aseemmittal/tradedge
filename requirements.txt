@@ -1,3 +1,4 @@
 flask
 flask-basicauth
 flask-admin
+requests
