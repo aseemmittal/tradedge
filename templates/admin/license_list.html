@@ -13,7 +13,7 @@
                         <div class="form-group" style="margin-bottom:15px;">
                             <label class="control-label" style="margin-right:8px;">Stocks & Actions:</label>
                             <div>
-                                {% set stocks = ['XAUSD', 'US30', 'USOIL', 'BTCUSD'] %}
+                                {% set stocks = ['XAUUSD', 'US30', 'USOIL', 'BTCUSD'] %}
                                 <div class="row" style="margin-left:0;">
                                     {% for stock in stocks %}
                                     <div class="col-xs-12" style="margin-bottom:18px;">
@@ -31,7 +31,7 @@
                                                     <input type="number" step="any" id="risk-{{ stock }}" class="form-control" placeholder="Risk value" required style="width:120px; margin-right:20px;">
                                                     <div class="btn-group" role="group" aria-label="{{ stock }}">
                                                         <button type="button" class="btn btn-success" style="margin-right:8px; min-width:90px;" onclick="sendPreset('sell', '{{ stock }}')">Sell</button>
-                                                        <button type="button" class="btn btn-warning" style="margin-right:8px; min-width:90px;" onclick="sendPreset('closesell', '{{ stock }}')">SellExit</button>
+                                                        <button type="button" class="btn btn-warning" style="margin-right:8px; min-width:90px;" onclick="sendPreset('closeshort', '{{ stock }}')">SellExit</button>
                                                     </div>
                                                 </div>
                                             </div>
