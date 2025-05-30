@@ -47,8 +47,6 @@ def register_admin_panel(app, basic_auth, read_licenses, write_licenses):
         def send(self):
             req = request.get_json()
             data_template = req.get("data", "")
-            print("Data template:", data_template)
-            return jsonify({"status": "Data template received."}), 200
             licenses = read_licenses()
             results = []
             errors = []
